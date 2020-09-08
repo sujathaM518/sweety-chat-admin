@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.sidebar-hold {
+    margin-top: 100px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0 16px;
+    width: 15rem;
+    height: 160px;
+    line-height: 64px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: #444;
+    background: #ffffff;
+    transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+    overflow: hidden;
+}

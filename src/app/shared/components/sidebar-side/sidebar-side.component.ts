@@ -7,7 +7,8 @@ import { JwtAuthService } from "app/shared/services/auth/jwt-auth.service";
 
 @Component({
   selector: "app-sidebar-side",
-  templateUrl: "./sidebar-side.component.html"
+  templateUrl: "./sidebar-side.component.html",
+  styleUrls: ["./sidebar-side.component.css"]
 })
 export class SidebarSideComponent implements OnInit, OnDestroy, AfterViewInit {
   public menuItems: any[];
