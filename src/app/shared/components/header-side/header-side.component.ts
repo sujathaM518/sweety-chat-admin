@@ -3,6 +3,7 @@ import { ThemeService } from '../../services/theme.service';
 import { LayoutService } from '../../services/layout.service';
 import { TranslateService } from '@ngx-translate/core';
 import { JwtAuthService } from '../../services/auth/jwt-auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-side',
@@ -28,13 +29,22 @@ export class HeaderSideComponent implements OnInit {
     private layout: LayoutService,
     public translate: TranslateService,
     private renderer: Renderer2,
-    public jwtAuth: JwtAuthService
+    public jwtAuth: JwtAuthService,
+    private router: Router
   ) {}
   ngOnInit() {
     this.egretThemes = this.themeService.egretThemes;
     this.layoutConf = this.layout.layoutConf;
     this.translate.use(this.currentLang.code);
   }
+
+/* ============ logout ============ */
+
+logout() {
+  localStorage.clear();
+  this.router.navigateByUrl("sessions/signin");
+}
+
   setLang(lng) {
     this.currentLang = lng;
     this.translate.use(lng.code);
