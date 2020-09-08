@@ -8,7 +8,7 @@ const routes: Routes = [
   {
      path:'',
      children:[
-      {path:"clientslist",component:FormersListComponent},
+      {path:"",component:FormersListComponent},
       {path:"userslist",component:DashboardComponent},
      ]
 }

@@ -49,7 +49,7 @@ export class NavigationService {
       type: "link",
       tooltip: "client-list",
       icon: "blur_on",
-      state: "clientslist",
+      state: "",
     },
     {
       name: "Users List",
