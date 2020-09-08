@@ -1,0 +1,38 @@
+
+<!-- *ngIf="showviewfarmer" -->
+<div class="list">
+    <h1>Users List</h1>
+    <div class="mat-elevation-z8 mt-3">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sno</th>
+              <!-- <th>Certificates</th> -->
+              <th>Name</th>
+              <th>Email</th>
+              <th>Date of Birth</th>
+              <th>Mobile Number</th>
+              <th>Gender</th>
+              <th>Coins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of usersList;let i=index">
+              <td>{{i+1}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.dateOfBirth}}</td>
+              <td>{{item.mobileno}}</td>
+              <td>{{item.gender}}</td>
+              <td>{{item.coins}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- <div *ngIf="show" class="text-center">
+        <span *ngIf="clientList.length < 1 || clientList === 'undefined'">NO Data Found</span>
+      </div> -->
+    </div>
+  </div>
