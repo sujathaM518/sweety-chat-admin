@@ -29,7 +29,7 @@ export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
   ) {
     this._unsubscribeAll = new Subject();
   }
-  profile={name:"admin@gmail.com",password:"12345"}
+  profile={name:"admin@gmail.com",password:"admin"}
 
   ngOnInit() {
     this.signinForm = new FormGroup({
@@ -62,7 +62,7 @@ export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
     
     this.jwtAuth.signin(signinData.username, signinData.password)
     .subscribe(response => {
-      this.router.navigateByUrl("/clientlist");
+      this.router.navigateByUrl("");
     }, err => {
       this.submitButton.disabled = false;
       this.progressBar.mode = 'determinate';  

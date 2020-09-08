@@ -4,17 +4,17 @@ import { AuthLayoutComponent } from './shared/components/layouts/auth-layout/aut
 import { AuthGuard } from './shared/guards/auth.guard';
 
 export const rootRouterConfig: Routes = [
-  { 
-    path: '', 
-    redirectTo: 'signin', 
-    pathMatch: 'full'   
-  },
+  // { 
+  //   path: '', 
+  //   redirectTo: '', 
+  //   pathMatch: 'full'   
+  // },
   {
-    path: '', 
+    path: 'sessions', 
     component: AuthLayoutComponent,
     children: [
       { 
-        path: 'sessions', 
+        path: '', 
         loadChildren: () => import('./views/sessions/sessions.module').then(m => m.SessionsModule),
         data: { title: 'Session'} 
       }
