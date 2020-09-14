@@ -2,7 +2,7 @@
 
 
 .sidebar-hold {
-    margin-top: 100px;
+    padding-top: 100px !important;
 }
 
 .branding {
@@ -11,7 +11,7 @@
     position: fixed;
     padding: 0 16px;
     width: 15rem;
-    height: 160px;
+    height: 160px !important;
     line-height: 64px;
     top: 0;
     left: 0;
@@ -21,3 +21,20 @@
     transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
     overflow: hidden;
 }
+
+.sidebar-slate .navigation-hold .branding {
+    background: #fff;
+}
+
+.sidebar-panel .navigation-hold {
+    background: #e1007a !important;
+}
+
+.sidebar-slate .navigation-hold .branding {
+    background: #fff !important;
+}
+
+/* .topbar-white .topbar.mat-toolbar {
+    background: #e1007a !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+} */

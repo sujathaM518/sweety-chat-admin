@@ -1,0 +1,16 @@
+.sign-logo img{
+    height: 130px;
+    width: 200px;
+}
+
+/* button {
+    background: #e1007a !important;
+    color: #000 !important;
+    cursor: pointer;
+} */
+
+.egret-navy .mat-raised-button.mat-primary {
+    background: #e1007a !important;
+    color: #000 !important;
+    cursor: pointer;
+}

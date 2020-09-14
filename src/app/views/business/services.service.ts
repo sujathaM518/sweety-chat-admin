@@ -12,6 +12,6 @@ export class ServicesService {
 
   getClientList(userType):Observable<any> {
     // let params = new HttpParams(userType);
-    return this.http.get(environment.baseUrl +`admin/users/${userType}`);     
+    return this.http.get(environment.apiURL +`admin/users/${userType}`);     
   }
 }
